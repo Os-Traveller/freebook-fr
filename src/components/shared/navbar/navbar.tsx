@@ -13,7 +13,7 @@ export function Navbar() {
         <Search />
         {/* right side */}
         <div className="ml-auto center_y gap-3 dark:text-white">
-          <IconContainer icon={<BsBellFill size={20} />} />
+          <IconContainer circle={true} icon={<BsBellFill size={20} />} />
           <ProfileIcon />
         </div>
       </section>

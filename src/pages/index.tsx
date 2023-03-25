@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Navbar } from "@/components/shared/navbar/navbar";
+import { GlobalLayout } from "@/components/layout/global_layout/globalLayout";
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* main content */}
-      <main className="bg-white_gray-500 h-screen dark:bg-black-500">
-        <Navbar />
+      <main className="bg-white_gray-500 h-screen dark:bg-black-500 dark:text-white">
+        <GlobalLayout />
       </main>
     </>
   );
