@@ -9,13 +9,12 @@ import { themeContext } from "@/context_api/theme_context/themeContext";
 import { themeHandler } from "@/functions/theme/theme";
 
 export function LeftSidebar() {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
   const { themeMode, setThemeMode } = useContext(themeContext);
 
   return (
-    <section className="dark:bg-black_gray-500 py-5">
+    <section className="dark:bg-black_gray-500 bg-white py-5">
       {/* home and profile */}
-      <div className="flex flex-col gap-4 pb-2 border-b border-black_gray-400">
+      <div className="flex flex-col gap-4 border-black_gray-400">
         <SidebarLink href="/" title="Home" icon={<IoMdHome className="text-2xl" />} />
         <SidebarLink href="/profile" title="Profile" icon={<HiUser className="text-2xl" />} />
         <SidebarLink href="/friends" title="Friends" icon={<HiUsers className="text-2xl" />} />
@@ -23,6 +22,7 @@ export function LeftSidebar() {
         {/* dark mode and light mode handler */}
         <span onClick={() => themeHandler({ themeMode, setThemeMode })}>
           <IconContainer
+            type="link"
             title={themeMode === "dark" ? "Light Mode" : "Dark Mode"}
             icon={
               themeMode === "dark" ? (
@@ -34,7 +34,7 @@ export function LeftSidebar() {
           />
         </span>
         <span onClick={() => console.log("clicked")}>
-          <IconContainer title="Logout" icon={<BiLogOut className="text-2xl" />} />
+          <IconContainer type="link" title="Logout" icon={<BiLogOut className="text-2xl" />} />
         </span>
       </div>
     </section>

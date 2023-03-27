@@ -1,5 +1,5 @@
-import { themeContextInterFace } from "@/components/utils/interfaces";
-import { themeModeType } from "@/components/utils/types";
+import { themeContextInterFace } from "@/utils/interfaces";
+import { themeModeType } from "@/utils/types";
 import { createContext, useState, ReactNode } from "react";
 
 const defaultThemeState = {

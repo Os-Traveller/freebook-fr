@@ -1,4 +1,4 @@
-import { themeContextInterFace } from "@/components/utils/interfaces";
+import { themeContextInterFace } from "@/utils/interfaces";
 
 export function themeHandler({ setThemeMode, themeMode }: themeContextInterFace) {
   ("use client");

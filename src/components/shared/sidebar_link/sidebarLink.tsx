@@ -12,7 +12,7 @@ export function SidebarLink({ href, title, icon }: sidebarLinkProps) {
   const router = useRouter();
   return (
     <Link href={href}>
-      <IconContainer activeRoute={router.pathname === href} icon={icon} title={title} />
+      <IconContainer type="link" activeRoute={router.pathname === href} icon={icon} title={title} />
     </Link>
   );
 }
