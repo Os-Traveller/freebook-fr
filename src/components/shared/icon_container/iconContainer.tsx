@@ -28,7 +28,7 @@ export function IconContainer({
       {/* link icon container */}
       {type === "link" && (
         <p
-          className={`flex items-center gap-3 hover:bg-gray-700 transition-all duration-300 py-2 rounded-br-md rounded-tr-md border-l-4 px-5 cursor-pointer ${
+          className={`flex items-center gap-3 hover:bg-gray-700 hover:text-white dark:hover:bg-black-400 transition-all duration-300 py-2 rounded-br-md rounded-tr-md border-l-4 px-5 cursor-pointer ${
             activeRoute ? "border-blue-500" : "border-transparent"
           }`}
         >
