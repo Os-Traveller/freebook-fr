@@ -31,11 +31,11 @@ export default function Modal({ title, children, modalState, setModalState }: mo
           onClick={closeModal}
         >
           <div
-            className="max-w-[600px] min-w-[300px] bg-white rounded-md"
+            className="max-w-[600px] min-w-[300px] bg-white rounded-md dark:bg-black_gray-600 dark:text-white"
             onClick={(e: MouseEvent) => e.stopPropagation()}
           >
             {/* ---------- modal header starts ---------- */}
-            <div className="center_y gap-3 px-5 py-3 border-b border-white_gray-500">
+            <div className="center_y gap-3 px-5 py-3 border-b border-white_gray-500 dark:border-black-400">
               <p className="w-full text-xl font-bold text-center">{title}</p>
               <p className="w-fit" onClick={closeModal}>
                 <IconContainer size="35px" icon={<MdClose size={20} />} />
