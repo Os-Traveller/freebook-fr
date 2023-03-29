@@ -29,6 +29,12 @@ body {
 ::-webkit-scrollbar-thumb {
   background: transparent;
 }
+.modal {
+  background: rgba(42, 42, 43, 0.8);
+  min-height: 100vh;
+  min-width: 100vw;
+  top: 0;
+}
 
 /* Handle on hover */
 /* ::-webkit-scrollbar-thumb:hover {
@@ -41,5 +47,11 @@ body {
   }
   .center_xy {
     @apply center_y justify-center;
+  }
+  .btn {
+    @apply py-1 px-5;
+  }
+  .hover_animation {
+    @apply transition-all duration-300;
   }
 }
