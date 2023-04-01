@@ -49,9 +49,15 @@ body {
     @apply center_y justify-center;
   }
   .btn {
-    @apply py-1 px-5;
+    @apply py-1 px-5 rounded-md;
   }
   .hover_animation {
     @apply transition-all duration-300;
+  }
+  .user_name {
+    @apply font-semibold  text-gray-600 dark:text-white;
+  }
+  .dark_bg {
+    @apply dark:bg-black_gray-500;
   }
 }
