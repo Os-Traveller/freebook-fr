@@ -9,12 +9,12 @@ import { IconContainer } from "../icon_container/iconContainer";
 export function Feed() {
   return (
     <>
-      <section className="bg-white dark:bg-black_gray-500 px-5 rounded-md shadow-md">
+      <section className="bg-white dark_bg px-5 rounded-md shadow-md">
         {/* header starts*/}
         <div className="flex gap-3 pt-5">
           <ProfileIcon size="45px" />
           <div>
-            <h2 className="font-semibold  text-gray-600 dark:text-white">User Name</h2>
+            <h2 className="user_name">User Name</h2>
             <h2 className="text-sm text-gray-500 dark:text-white">20H</h2>
           </div>
           <BsThreeDots className="ml-auto" />

@@ -5,7 +5,7 @@ import { IconContainer } from "../icon_container/iconContainer";
 
 export function Navbar() {
   return (
-    <nav className="py-3 px-5 shadow-md border-b border-gray-300 dark:border-gray-600 bg-white dark:bg-black_gray-500">
+    <nav className="py-3 px-5 shadow-md border-b border-gray-300 dark:border-gray-600 bg-white dark_bg">
       <section className="grid grid-cols-3 items-center">
         {/* logo */}
         <h1 className="logo text-3xl text-blue-500 dark:text-white font-semibold">freebook</h1>
