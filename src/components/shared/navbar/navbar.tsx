@@ -8,7 +8,9 @@ export function Navbar() {
     <nav className="py-3 px-5 shadow-md border-b border-gray-300 dark:border-gray-600 bg-white dark_bg">
       <section className="grid grid-cols-3 items-center">
         {/* logo */}
-        <h1 className="logo text-3xl text-blue-500 dark:text-white font-semibold">freebook</h1>
+        <h1 className="logo text-2xl md:text-3xl text-blue-500 dark:text-white font-semibold">
+          freebook
+        </h1>
         {/* search */}
         <Search />
         {/* right side */}

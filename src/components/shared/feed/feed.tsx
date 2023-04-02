@@ -30,7 +30,7 @@ export function Feed() {
           <Image className="mt-3 rounded-md" src={img} alt="optional" />
 
           {/* react comment and share starts */}
-          <div className="mt-3 center_y justify-between">
+          <div className="mt-3 center_y justify-between text-sm md:text-base">
             <p className="center_y gap-2">
               <BsFillHeartFill className="text-red-500" />
               100

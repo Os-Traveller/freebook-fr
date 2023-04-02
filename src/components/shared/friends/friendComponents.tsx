@@ -18,7 +18,7 @@ export function FriendComponent({ friendRequest = false }: friendComponentProps)
 
       {!friendRequest && (
         <div className="mt-3 flex gap-4 w-full">
-          <button className="btn bg-blue-500 text-white w-full text-sm">Add Friend</button>
+          <button className="btn bg-blue-500 text-white w-full text-sm">Add</button>
           <button className="btn border border-gray-400 w-full text-sm">Remove</button>
         </div>
       )}
