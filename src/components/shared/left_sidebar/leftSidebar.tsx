@@ -12,7 +12,7 @@ export function LeftSidebar() {
   const { themeMode, setThemeMode } = useContext(themeContext);
 
   return (
-    <section className="dark_bg bg-white py-5 h-full rounded-md">
+    <section className="dark_bg w-fit md:w-full bg-white py-5 h-full md:rounded-md overflow-y-auto">
       {/* home and profile */}
       <div className="flex flex-col gap-4 border-black_gray-400">
         <SidebarLink href="/" title="Home" icon={<IoMdHome className="text-2xl" />} />
