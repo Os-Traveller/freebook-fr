@@ -27,11 +27,11 @@ export default function Modal({ title, children, modalState, setModalState }: mo
       <>
         {/* ------------ modal overlay starts ------------ */}
         <section
-          className="modal absolute top-0 left-0 h-screen w-screen center_xy"
+          className="modal absolute top-0 left-0 h-screen w-screen center_xy px-4"
           onClick={closeModal}
         >
           <div
-            className="max-w-[600px] min-w-[300px] bg-white rounded-md dark:bg-black_gray-600 dark:text-white"
+            className="max-w-[600px] w-full bg-white rounded-md dark:bg-black_gray-600 dark:text-white"
             onClick={(e: MouseEvent) => e.stopPropagation()}
           >
             {/* ---------- modal header starts ---------- */}
@@ -41,7 +41,8 @@ export default function Modal({ title, children, modalState, setModalState }: mo
                 <IconContainer size="35px" icon={<MdClose size={20} />} />
               </p>
             </div>
-            {/* ---------- modal header starts ---------- */}
+            {/* ---------- modal header ends ---------- */}
+
             {/* ---------- modal body starts ---------- */}
             <div className="overflow-y-auto max-h-[500px] p-5">{children}</div>
             {/* ---------- modal body Ends ---------- */}

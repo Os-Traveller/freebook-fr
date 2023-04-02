@@ -12,7 +12,9 @@ export function Navbar() {
           freebook
         </h1>
         {/* search */}
-        <Search />
+        <div>
+          <Search />
+        </div>
         {/* right side */}
         <div className="ml-auto center_y gap-3 dark:text-white">
           <IconContainer icon={<BsBellFill size={20} />} />

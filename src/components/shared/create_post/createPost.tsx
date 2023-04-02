@@ -9,7 +9,9 @@ export default function CreatePost() {
     <>
       <div className="bg-white p-5 rounded-md dark:bg-black_gray-500">
         <div className="center_y gap-3">
-          <ProfileIcon />
+          <div>
+            <ProfileIcon />
+          </div>
           <p
             className="w-full px-5 py-2 bg-white_gray-500 rounded-full text-gray-600 cursor-pointer 
             dark:bg-black_gray-400 dark:text-white"

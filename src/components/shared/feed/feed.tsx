@@ -24,13 +24,13 @@ export function Feed() {
         {/* feed starts body */}
         <div className="mt-5 border-b pb-3 border-gray-400">
           {/* text content starts */}
-          <p className="text-justify">{`Hot News Today, Bard is just killed the Chat Gpt. Are you guys not happy about it? You should be. I am super excited about this news today. Let's see when the Bard become next Ultron`}</p>
+          <p className="text-justify text-sm md:text-base">{`Hot News Today, Bard is just killed the Chat Gpt. Are you guys not happy about it? You should be. I am super excited about this news today. Let's see when the Bard become next Ultron`}</p>
           {/* text content ends */}
 
           <Image className="mt-3 rounded-md" src={img} alt="optional" />
 
           {/* react comment and share starts */}
-          <div className="mt-3 center_y justify-between text-sm md:text-base">
+          <div className="mt-3 center_y justify-between text-xs md:text-base">
             <p className="center_y gap-2">
               <BsFillHeartFill className="text-red-500" />
               100
