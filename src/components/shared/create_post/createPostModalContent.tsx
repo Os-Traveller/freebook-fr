@@ -5,7 +5,7 @@ import { BsImage } from "react-icons/bs";
 export default function CreatePostModalContent() {
   return (
     <>
-      <section className="min-w-[450px]">
+      <section className="md:min-w-[450px] w-full">
         {/* --------- header starts --------- */}
         <div className="center_y gap-4">
           <ProfileIcon size="50px" />
