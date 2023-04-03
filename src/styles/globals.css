@@ -61,4 +61,7 @@ body {
   .dark_bg {
     @apply dark:bg-black_gray-500;
   }
+  .page {
+    @apply bg-white_gray-500 dark:bg-black-500 dark:text-white;
+  }
 }

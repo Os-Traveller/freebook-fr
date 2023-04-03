@@ -4,15 +4,16 @@ import { IconContainer } from "../icon_container/iconContainer";
 
 type sidebarLinkProps = {
   href: string;
-  title: string;
+  title?: string;
   icon: any;
+  type?: "link" | "profile-page-link";
 };
 
-export function SidebarLink({ href, title, icon }: sidebarLinkProps) {
+export function SidebarLink({ href, title, icon, type = "link" }: sidebarLinkProps) {
   const router = useRouter();
   return (
     <Link href={href}>
-      <IconContainer type="link" activeRoute={router.pathname === href} icon={icon} title={title} />
+      <IconContainer type={type} activeRoute={router.pathname === href} icon={icon} title={title} />
     </Link>
   );
 }
