@@ -6,7 +6,7 @@ type sidebarLinkProps = {
   href: string;
   title?: string;
   icon: any;
-  type?: "link" | "profile-page-link";
+  type?: "link" | "other-page-link";
 };
 
 export function SidebarLink({ href, title, icon, type = "link" }: sidebarLinkProps) {

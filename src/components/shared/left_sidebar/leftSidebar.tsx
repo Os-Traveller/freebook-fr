@@ -54,16 +54,16 @@ export function LeftSidebar({ page }: leftSidebarProps) {
             {/* ----------------- for links ----------------- */}
             <>
               {leftSideBarData.link.map((data) => (
-                <SidebarLink href={data.url} icon={data.icon} type="profile-page-link" />
+                <SidebarLink href={data.url} icon={data.icon} type="other-page-link" />
               ))}
 
               {/* ----------------- for theme ----------------- */}
-              <>{<IconContainer icon={leftSideBarData.theme.icon[0]} type="profile-page" />}</>
+              <>{<IconContainer icon={leftSideBarData.theme.icon[0]} type="other-page" />}</>
 
               {/* ----------------- for functional things ----------------- */}
             </>
             {leftSideBarData.function.map((data) => (
-              <IconContainer icon={data.icon} type="profile-page" />
+              <IconContainer icon={data.icon} type="other-page" />
             ))}
             <></>
           </div>
