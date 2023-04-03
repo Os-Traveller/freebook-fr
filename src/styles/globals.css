@@ -17,7 +17,8 @@ body {
 
 /* customizing scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
+  /* width: 5px; */
+  width: 0;
 }
 
 /* Track */
@@ -28,6 +29,12 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: transparent;
+}
+.modal {
+  background: rgba(42, 42, 43, 0.8);
+  min-height: 100vh;
+  min-width: 100vw;
+  top: 0;
 }
 
 /* Handle on hover */
@@ -41,5 +48,20 @@ body {
   }
   .center_xy {
     @apply center_y justify-center;
+  }
+  .btn {
+    @apply py-1 px-5 rounded-md;
+  }
+  .hover_animation {
+    @apply transition-all duration-300;
+  }
+  .user_name {
+    @apply font-semibold  text-gray-600 dark:text-white;
+  }
+  .dark_bg {
+    @apply dark:bg-black_gray-500;
+  }
+  .page {
+    @apply bg-white_gray-500 dark:bg-black-500 dark:text-white;
   }
 }

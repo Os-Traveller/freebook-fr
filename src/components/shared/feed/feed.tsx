@@ -9,12 +9,12 @@ import { IconContainer } from "../icon_container/iconContainer";
 export function Feed() {
   return (
     <>
-      <section className="w-full max-w-[700px] mx-auto bg-white dark:bg-black_gray-500 px-5 rounded-md shadow-md">
+      <section className="bg-white dark_bg px-5 rounded-md shadow-md">
         {/* header starts*/}
         <div className="flex gap-3 pt-5">
           <ProfileIcon size="45px" />
           <div>
-            <h2 className="font-semibold  text-gray-600 dark:text-white">User Name</h2>
+            <h2 className="user_name">User Name</h2>
             <h2 className="text-sm text-gray-500 dark:text-white">20H</h2>
           </div>
           <BsThreeDots className="ml-auto" />
@@ -24,13 +24,13 @@ export function Feed() {
         {/* feed starts body */}
         <div className="mt-5 border-b pb-3 border-gray-400">
           {/* text content starts */}
-          <p className="text-justify">{`Hot News Today, Bard is just killed the Chat Gpt. Are you guys not happy about it? You should be. I am super excited about this news today. Let's see when the Bard become next Ultron`}</p>
+          <p className="text-justify text-sm md:text-base">{`Hot News Today, Bard is just killed the Chat Gpt. Are you guys not happy about it? You should be. I am super excited about this news today. Let's see when the Bard become next Ultron`}</p>
           {/* text content ends */}
 
           <Image className="mt-3 rounded-md" src={img} alt="optional" />
 
           {/* react comment and share starts */}
-          <div className="mt-3 center_y justify-between">
+          <div className="mt-3 center_y justify-between text-xs md:text-base">
             <p className="center_y gap-2">
               <BsFillHeartFill className="text-red-500" />
               100
