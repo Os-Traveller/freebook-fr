@@ -1,4 +1,4 @@
-import { GlobalLayout } from "@/components/layout/global_layout/globalLayout";
+import { ProfileLayout } from "@/components/layout/profile_layout/profileLayout";
 import Head from "next/head";
 import React from "react";
 
@@ -11,9 +11,9 @@ export default function Profile() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <GlobalLayout>
+      <ProfileLayout>
         <div>Profile</div>
-      </GlobalLayout>
+      </ProfileLayout>
     </>
   );
 }
